@@ -1,0 +1,29 @@
+# Compiled output
+dist/
+tmp/
+out-tsc/
+bazel-out/
+
+# Node
+node_modules/
+npm-debug.log
+yarn-error.log
+
+# Angular/AngularCLI
+.angular/
+
+# Editor directories and files
+.vscode/
+*.suo
+*.ntvs*
+*.njsproj
+*.sln
+*.sw?
+
+# Environments
+.env
+.env.*
+
+# Miscellaneous
+.DS_Store
+Thumbs.db
