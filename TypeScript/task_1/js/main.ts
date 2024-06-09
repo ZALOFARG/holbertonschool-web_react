@@ -7,12 +7,43 @@ interface Teacher {
   [key: string]: any;
 }
 
-const teacher3: Teacher = {
-  firstName: 'John',
-  fullTimeEmployee: false,
-  lastName: 'Doe',
-  location: 'London',
-  contract: false,
-};
+interface Directors extends Teacher {
+  numberOfReports: number;
+}
 
-console.log(teacher3);
+interface printTeacherFunction {
+  (firstName: string, lastName: string): string;
+}
+
+function printTeacher: printTeacherFunction = (firstName, lastName) => {
+  const result = `${firstName.charAt(0).toUpperCase()}. ${lastName}`;
+  return result;
+}
+
+interface StudentProps {
+  firstName: string;
+  lastName: string;
+}
+
+interface Student {
+  workOnHomework(): string;
+  displayName(): string;
+}
+
+class StudentClass implements Student {
+  firstName: string;
+  lastName: string;
+
+  constructor(props: StudentProps) {
+    this.firstName: props.firstName;
+    this.lastName: props.lastName;
+  }
+
+  workOnHomework(): string {
+    return `Currently working`;
+  }
+
+  displayName(): string {
+    return this.firstName;
+  }
+}
