@@ -1,0 +1,36 @@
+.App {
+  display: grid;
+  grid-template-rows: auto 1fr auto;
+  min-height: 100vh;
+}
+
+.App-logo {
+  height: 40vmin;
+}
+
+.App-header {
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  font-size: calc(10px + 2vmin);
+  color: #e0354b;
+  width: 100%;
+}
+
+.App-body {
+  border-top: 4px solid #b4220e;
+  border-bottom: 4px solid #b4220e;
+  display: flex;
+  flex-direction: column;
+  font-size: 1.5rem;
+}
+
+.App-body p {
+  margin: 3rem;
+}
+
+.App-footer {
+  text-align: center;
+  font-size: 1.25rem;
+  font-style: italic;
+}
