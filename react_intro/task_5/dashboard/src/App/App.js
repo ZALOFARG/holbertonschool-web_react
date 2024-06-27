@@ -1,4 +1,5 @@
-import hbtnLogo from './holberton-logo.jpg';
+import React from 'react';
+import hbtnLogo from '../assets/holberton-logo.jpg';
 import './App.css';
 import { getFullYear, getFooterCopy } from '../utils/utils';
 
