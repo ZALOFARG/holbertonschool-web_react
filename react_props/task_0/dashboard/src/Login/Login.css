@@ -1,0 +1,11 @@
+.App-body {
+    border-top: 4px solid #b4220e;
+    border-bottom: 4px solid #b4220e;
+    display: flex;
+    flex-direction: column;
+    font-size: 1.5rem;
+}
+
+.App-body p {
+    margin: 3rem;
+}
